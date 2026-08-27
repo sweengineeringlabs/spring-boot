@@ -1,0 +1,9 @@
+[project]
+name = "spring-boot-autoconfigure-processor"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+description = "Spring Boot autoconfigure annotation processor"
+
+[build.compiler]
+backend = "javac"

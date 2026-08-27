@@ -1,0 +1,24 @@
+[workspace]
+name = "spring-boot-grine-bootstrap"
+members = [
+    "core/spring-boot-autoconfigure-processor"
+]
+
+[workspace.package]
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+
+[build]
+target_dir = "target/grine"
+parallel_jobs = "auto"
+
+[build.compiler]
+backend = "javac"
+
+[resolver]
+provider = "coursier"
+remote_repositories = [
+    "https://repo1.maven.org/maven2",
+    "https://repo.spring.io/milestone",
+    "https://repo.spring.io/snapshot"
+]
