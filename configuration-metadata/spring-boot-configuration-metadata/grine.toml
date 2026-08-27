@@ -1,0 +1,12 @@
+[project]
+name = "spring-boot-configuration-metadata"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+description = "Spring Boot configuration metadata model"
+
+[build]
+source_dirs = ["src/main/java", "src/json-shade/java"]
+
+[build.compiler]
+backend = "javac"

@@ -25,13 +25,11 @@ Compiled output is written beneath `target/grine`.
 
 ## Current scope
 
+- `spring-boot-configuration-metadata`, including its additional
+  `src/json-shade/java` source tree through Grine's `source_dirs` support
 - `spring-boot-autoconfigure-processor`
 
 The complete Spring Boot distribution still requires Gradle. It uses custom
 Gradle plugins, Kotlin and Groovy compilation, generated sources, test fixtures,
 dependency platforms, and specialized packaging tasks that Grine does not yet
 model. Add further pure-Java modules incrementally as those capabilities land.
-
-In particular, workspace-member feature source sets are not currently loaded by
-Grine, so modules that combine `src/main/java` with additional source trees such
-as `src/json-shade/java` are intentionally excluded.
