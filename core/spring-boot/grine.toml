@@ -1,0 +1,39 @@
+[project]
+name = "spring-boot"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[[build.templates]]
+source_dir = "src/main/javaTemplates"
+output_dir = "target/grine/generated-sources/templates"
+properties = { springBootVersion = "${project.version}" }
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"org.springframework:spring-core" = "7.1.0-M1"
+"org.springframework:spring-context" = "7.1.0-M1"
+"org.springframework:spring-test" = "7.1.0-M1"
+"org.springframework:spring-web" = "7.1.0-M1"
+"ch.qos.logback:logback-classic" = "1.6.1"
+"com.google.code.gson:gson" = "2.14.0"
+"io.projectreactor:reactor-core" = "3.8.4"
+"jakarta.servlet:jakarta.servlet-api" = "6.1.0"
+"jakarta.validation:jakarta.validation-api" = "3.1.1"
+"org.apache.groovy:groovy" = "5.0.8"
+"org.apache.logging.log4j:log4j-api" = "2.26.1"
+"org.apache.logging.log4j:log4j-core" = "2.26.1"
+"org.apache.logging.log4j:log4j-jul" = "2.26.1"
+"org.crac:crac" = "1.5.0"
+"org.jetbrains.kotlin:kotlin-reflect" = "2.3.21"
+"org.jetbrains.kotlin:kotlin-stdlib" = "2.3.21"
+"org.slf4j:jul-to-slf4j" = "2.0.18"
+"org.yaml:snakeyaml" = "2.6"
+"tools.jackson.core:jackson-databind" = "3.1.5"
