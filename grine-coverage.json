@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "milestone": "M3",
-  "testedCommit": "df0e109e9b00943e5a4933f127baeccbd5b8d8bc",
+  "milestone": "M4",
+  "testedCommit": "a382da55d7ad801e8ab27acf37ce53786c637be0",
   "testedOn": "2026-08-28",
   "jdk": "21.0.8",
   "command": "java -jar cli-0.1.0-SNAPSHOT-all.jar build --force",
@@ -50,6 +50,31 @@
     {
       "path": "cli/spring-boot-cli",
       "productionSources": 59,
+      "build": "passed"
+    },
+    {
+      "path": "core/spring-boot-test",
+      "productionSources": 79,
+      "build": "passed"
+    },
+    {
+      "path": "module/spring-boot-web-server",
+      "productionSources": 82,
+      "build": "passed"
+    },
+    {
+      "path": "module/spring-boot-persistence",
+      "productionSources": 5,
+      "build": "passed"
+    },
+    {
+      "path": "module/spring-boot-data-commons",
+      "productionSources": 14,
+      "build": "passed"
+    },
+    {
+      "path": "module/spring-boot-actuator",
+      "productionSources": 189,
       "build": "passed"
     }
   ],
@@ -105,19 +130,44 @@
       "status": "mapped"
     },
     {
-      "gradleTask": "M3 test tasks",
+      "gradleTask": ":core:spring-boot-test:compileJava",
+      "grineOperation": "build:spring-boot-test",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":module:spring-boot-web-server:compileJava",
+      "grineOperation": "build:spring-boot-web-server",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":module:spring-boot-persistence:compileJava",
+      "grineOperation": "build:spring-boot-persistence",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":module:spring-boot-data-commons:compileJava",
+      "grineOperation": "build:spring-boot-data-commons",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":module:spring-boot-actuator:compileJava",
+      "grineOperation": "build:spring-boot-actuator",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": "M4 test tasks",
       "status": "unmapped",
       "reason": "Named suites, fixtures, and Spring test dependencies are tracked by Phase 5."
     },
     {
-      "gradleTask": "M3 jar, distribution, and publication tasks",
+      "gradleTask": "M4 jar, distribution, and publication tasks",
       "status": "unmapped",
       "reason": "Thin JARs, executable CLI archives, distributions, and publication parity are tracked by Phase 6."
     }
   ],
   "summary": {
-    "productionModulesMapped": 9,
-    "productionModulesPassed": 9,
+    "productionModulesMapped": 14,
+    "productionModulesPassed": 14,
     "requiredTasksSilentlyIgnored": 0
   }
 }
