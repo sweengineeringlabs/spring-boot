@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "milestone": "M2",
-  "testedCommit": "751adb6c",
+  "testedCommit": "751adb6c7ffb683c6c762d7324fd38bc062ef85c",
   "testedOn": "2026-08-28",
   "jdk": "21.0.8",
   "command": "java -jar cli-0.1.0-SNAPSHOT-all.jar build --force",
