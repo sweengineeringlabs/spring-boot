@@ -12,8 +12,10 @@ resources_dir = "src/main/resources"
 [build.compiler]
 backend = "javac"
 
-[dependencies]
+[dependency_scopes.compile_only]
 "spring-boot" = "4.2.0-SNAPSHOT"
+
+[dependency_scopes.implementation]
 "spring-boot-loader-tools" = "4.2.0-SNAPSHOT"
 "jline:jline" = "2.11"
 "net.sf.jopt-simple:jopt-simple" = "5.0.4"
