@@ -4,7 +4,10 @@ members = [
     "configuration-metadata/spring-boot-configuration-metadata",
     "core/spring-boot-autoconfigure-processor",
     "core/spring-boot",
-    "core/spring-boot-autoconfigure"
+    "core/spring-boot-autoconfigure",
+    "loader/spring-boot-loader",
+    "loader/spring-boot-jarmode-tools",
+    "loader/spring-boot-loader-tools"
 ]
 
 [workspace.package]

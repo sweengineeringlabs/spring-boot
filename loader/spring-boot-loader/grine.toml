@@ -1,0 +1,16 @@
+[project]
+name = "spring-boot-loader"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"org.springframework:spring-core" = "7.1.0-M1"

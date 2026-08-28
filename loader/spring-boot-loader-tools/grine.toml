@@ -1,0 +1,20 @@
+[project]
+name = "spring-boot-loader-tools"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot-loader" = "4.2.0-SNAPSHOT"
+"spring-boot-jarmode-tools" = "4.2.0-SNAPSHOT"
+"org.apache.commons:commons-compress" = "1.27.1"
+"org.springframework:spring-core" = "7.1.0-M1"
+"ch.qos.logback:logback-classic" = "1.6.1"
