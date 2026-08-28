@@ -31,3 +31,6 @@ backend = "javac"
 "org.skyscreamer:jsonassert" = "1.5.3"
 "org.springframework:spring-web" = "7.1.0-M1"
 "tools.jackson.core:jackson-databind" = "3.1.5"
+
+[dependency_options."org.seleniumhq.selenium:htmlunit3-driver"]
+exclusions = ["com.sun.activation:jakarta.activation"]
