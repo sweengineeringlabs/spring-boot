@@ -7,9 +7,14 @@ members = [
     "core/spring-boot-autoconfigure-processor",
     "core/spring-boot",
     "core/spring-boot-autoconfigure",
+    "core/spring-boot-test",
     "loader/spring-boot-loader",
     "loader/spring-boot-jarmode-tools",
-    "loader/spring-boot-loader-tools"
+    "loader/spring-boot-loader-tools",
+    "module/spring-boot-web-server",
+    "module/spring-boot-persistence",
+    "module/spring-boot-data-commons",
+    "module/spring-boot-actuator"
 ]
 
 [workspace.package]

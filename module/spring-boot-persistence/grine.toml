@@ -1,0 +1,18 @@
+[project]
+name = "spring-boot-persistence"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"spring-boot-autoconfigure" = "4.2.0-SNAPSHOT"
+"org.springframework:spring-tx" = "7.1.0-M1"

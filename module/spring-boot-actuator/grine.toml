@@ -1,0 +1,20 @@
+[project]
+name = "spring-boot-actuator"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"spring-boot-web-server" = "4.2.0-SNAPSHOT"
+"com.fasterxml.jackson.datatype:jackson-datatype-jsr310" = "2.21.5"
+"org.springframework.security:spring-security-core" = "7.2.0-M1"
+"org.springframework.security:spring-security-web" = "7.2.0-M1"

@@ -1,0 +1,21 @@
+[project]
+name = "spring-boot-web-server"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"spring-boot-autoconfigure" = "4.2.0-SNAPSHOT"
+"spring-boot-test" = "4.2.0-SNAPSHOT"
+"org.springframework:spring-web" = "7.1.0-M1"
+"jakarta.servlet:jakarta.servlet-api" = "6.1.0"
+"org.springframework:spring-test" = "7.1.0-M1"

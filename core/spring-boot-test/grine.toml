@@ -1,0 +1,33 @@
+[project]
+name = "spring-boot-test"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"org.springframework:spring-test" = "7.1.0-M1"
+"com.fasterxml.jackson.core:jackson-databind" = "2.21.5"
+"com.google.code.gson:gson" = "2.14.0"
+"com.jayway.jsonpath:json-path" = "3.0.0"
+"jakarta.json.bind:jakarta.json.bind-api" = "3.0.2"
+"jakarta.servlet:jakarta.servlet-api" = "6.1.0"
+"junit:junit" = "4.13.2"
+"org.assertj:assertj-core" = "3.27.7"
+"org.hamcrest:hamcrest-core" = "3.0"
+"org.hamcrest:hamcrest-library" = "3.0"
+"org.junit.jupiter:junit-jupiter-api" = "6.0.3"
+"org.mockito:mockito-core" = "5.23.0"
+"org.seleniumhq.selenium:htmlunit3-driver" = "4.46.0"
+"org.seleniumhq.selenium:selenium-api" = "4.46.0"
+"org.skyscreamer:jsonassert" = "1.5.3"
+"org.springframework:spring-web" = "7.1.0-M1"
+"tools.jackson.core:jackson-databind" = "3.1.5"
