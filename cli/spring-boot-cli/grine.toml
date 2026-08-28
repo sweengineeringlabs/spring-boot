@@ -1,0 +1,23 @@
+[project]
+name = "spring-boot-cli"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dirs = ["src/main/java", "src/json-shade/java"]
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"spring-boot-loader-tools" = "4.2.0-SNAPSHOT"
+"jline:jline" = "2.11"
+"net.sf.jopt-simple:jopt-simple" = "5.0.4"
+"org.apache.httpcomponents.client5:httpclient5" = "5.6.4"
+"org.slf4j:slf4j-simple" = "2.0.18"
+"org.springframework:spring-core" = "7.1.0-M1"
+"org.springframework.security:spring-security-crypto" = "7.2.0-M1"

@@ -1,6 +1,8 @@
 [workspace]
 name = "spring-boot-grine-bootstrap"
 members = [
+    "buildpack/spring-boot-buildpack-platform",
+    "cli/spring-boot-cli",
     "configuration-metadata/spring-boot-configuration-metadata",
     "core/spring-boot-autoconfigure-processor",
     "core/spring-boot",
