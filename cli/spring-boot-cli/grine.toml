@@ -12,6 +12,9 @@ resources_dir = "src/main/resources"
 [build.compiler]
 backend = "javac"
 
+[platforms]
+"org.springframework:spring-framework-bom" = "7.1.0-M1"
+
 [dependency_scopes.compile_only]
 "spring-boot" = "4.2.0-SNAPSHOT"
 
@@ -21,5 +24,5 @@ backend = "javac"
 "net.sf.jopt-simple:jopt-simple" = "5.0.4"
 "org.apache.httpcomponents.client5:httpclient5" = "5.6.4"
 "org.slf4j:slf4j-simple" = "2.0.18"
-"org.springframework:spring-core" = "7.1.0-M1"
+"org.springframework:spring-core" = ""
 "org.springframework.security:spring-security-crypto" = "7.2.0-M1"
