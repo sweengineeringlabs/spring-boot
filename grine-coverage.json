@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "milestone": "M2",
-  "testedCommit": "751adb6c7ffb683c6c762d7324fd38bc062ef85c",
+  "milestone": "M3",
+  "testedCommit": "df0e109e9b00943e5a4933f127baeccbd5b8d8bc",
   "testedOn": "2026-08-28",
   "jdk": "21.0.8",
   "command": "java -jar cli-0.1.0-SNAPSHOT-all.jar build --force",
@@ -25,6 +25,31 @@
     {
       "path": "core/spring-boot-autoconfigure",
       "productionSources": 155,
+      "build": "passed"
+    },
+    {
+      "path": "loader/spring-boot-loader",
+      "productionSources": 77,
+      "build": "passed"
+    },
+    {
+      "path": "loader/spring-boot-jarmode-tools",
+      "productionSources": 16,
+      "build": "passed"
+    },
+    {
+      "path": "loader/spring-boot-loader-tools",
+      "productionSources": 46,
+      "build": "passed"
+    },
+    {
+      "path": "buildpack/spring-boot-buildpack-platform",
+      "productionSources": 125,
+      "build": "passed"
+    },
+    {
+      "path": "cli/spring-boot-cli",
+      "productionSources": 59,
       "build": "passed"
     }
   ],
@@ -50,19 +75,49 @@
       "status": "mapped"
     },
     {
-      "gradleTask": "M2 test tasks",
+      "gradleTask": ":loader:spring-boot-loader:compileJava",
+      "grineOperation": "build:spring-boot-loader",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":loader:spring-boot-jarmode-tools:compileJava",
+      "grineOperation": "build:spring-boot-jarmode-tools",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":loader:spring-boot-loader-tools:compileJava",
+      "grineOperation": "build:spring-boot-loader-tools",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":loader:spring-boot-loader-tools:processResources",
+      "grineOperation": "plugin:com.grine.archive-resources",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":buildpack:spring-boot-buildpack-platform:compileJava",
+      "grineOperation": "build:spring-boot-buildpack-platform",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":cli:spring-boot-cli:compileJava",
+      "grineOperation": "build:spring-boot-cli",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": "M3 test tasks",
       "status": "unmapped",
       "reason": "Named suites, fixtures, and Spring test dependencies are tracked by Phase 5."
     },
     {
-      "gradleTask": "M2 jar and publication tasks",
+      "gradleTask": "M3 jar, distribution, and publication tasks",
       "status": "unmapped",
-      "reason": "Thin JAR metadata and publication parity are tracked by Phase 6."
+      "reason": "Thin JARs, executable CLI archives, distributions, and publication parity are tracked by Phase 6."
     }
   ],
   "summary": {
-    "productionModulesMapped": 4,
-    "productionModulesPassed": 4,
+    "productionModulesMapped": 9,
+    "productionModulesPassed": 9,
     "requiredTasksSilentlyIgnored": 0
   }
 }
