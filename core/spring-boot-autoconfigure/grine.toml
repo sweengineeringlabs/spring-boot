@@ -1,0 +1,23 @@
+[project]
+name = "spring-boot-autoconfigure"
+version = "4.2.0-SNAPSHOT"
+group = "org.springframework.boot"
+java_version = "21"
+
+[build]
+target_dir = "target/grine"
+source_dir = "src/main/java"
+resources_dir = "src/main/resources"
+
+[build.compiler]
+backend = "javac"
+
+[dependencies]
+"spring-boot" = "4.2.0-SNAPSHOT"
+"com.github.ben-manes.caffeine:caffeine" = "3.2.4"
+"org.aspectj:aspectjweaver" = "1.9.25.1"
+"io.micrometer:context-propagation" = "1.2.0-M1"
+"jakarta.servlet:jakarta.servlet-api" = "6.1.0"
+"javax.money:money-api" = "1.1"
+"org.springframework:spring-web" = "7.1.0-M1"
+"org.springframework.data:spring-data-commons" = "4.1.0-M1"
