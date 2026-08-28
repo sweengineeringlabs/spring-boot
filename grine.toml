@@ -28,3 +28,10 @@ remote_repositories = [
     "https://repo.spring.io/milestone",
     "https://repo.spring.io/snapshot"
 ]
+
+[[plugins]]
+id = "com.grine.archive-resources"
+configuration = { module = "spring-boot-loader-tools", archives = [
+    { source_module = "spring-boot-loader", output = "META-INF/loader/spring-boot-loader.jar", excludes = ["META-INF/LICENSE.txt", "META-INF/NOTICE.txt", "META-INF/spring-boot.properties"] },
+    { source_module = "spring-boot-jarmode-tools", output = "META-INF/jarmode/spring-boot-jarmode-tools.jar" }
+] }
