@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "milestone": "M2",
+  "testedCommit": "751adb6c",
+  "testedOn": "2026-08-28",
+  "jdk": "21.0.8",
+  "command": "java -jar cli-0.1.0-SNAPSHOT-all.jar build --force",
+  "gradleInvoked": false,
+  "modules": [
+    {
+      "path": "configuration-metadata/spring-boot-configuration-metadata",
+      "productionSources": 22,
+      "build": "passed"
+    },
+    {
+      "path": "core/spring-boot-autoconfigure-processor",
+      "productionSources": 3,
+      "build": "passed"
+    },
+    {
+      "path": "core/spring-boot",
+      "productionSources": 538,
+      "build": "passed"
+    },
+    {
+      "path": "core/spring-boot-autoconfigure",
+      "productionSources": 155,
+      "build": "passed"
+    }
+  ],
+  "taskMappings": [
+    {
+      "gradleTask": ":configuration-metadata:spring-boot-configuration-metadata:compileJava",
+      "grineOperation": "build:spring-boot-configuration-metadata",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":core:spring-boot-autoconfigure-processor:compileJava",
+      "grineOperation": "build:spring-boot-autoconfigure-processor",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":core:spring-boot:compileJava",
+      "grineOperation": "build:spring-boot",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": ":core:spring-boot-autoconfigure:compileJava",
+      "grineOperation": "build:spring-boot-autoconfigure",
+      "status": "mapped"
+    },
+    {
+      "gradleTask": "M2 test tasks",
+      "status": "unmapped",
+      "reason": "Named suites, fixtures, and Spring test dependencies are tracked by Phase 5."
+    },
+    {
+      "gradleTask": "M2 jar and publication tasks",
+      "status": "unmapped",
+      "reason": "Thin JAR metadata and publication parity are tracked by Phase 6."
+    }
+  ],
+  "summary": {
+    "productionModulesMapped": 4,
+    "productionModulesPassed": 4,
+    "requiredTasksSilentlyIgnored": 0
+  }
+}

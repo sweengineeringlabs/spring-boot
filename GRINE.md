@@ -33,3 +33,9 @@ The complete Spring Boot distribution still requires Gradle. It uses custom
 Gradle plugins, Kotlin and Groovy compilation, generated sources, test fixtures,
 dependency platforms, and specialized packaging tasks that Grine does not yet
 model. Add further pure-Java modules incrementally as those capabilities land.
+# Grine migration status
+
+The machine-readable milestone coverage and exact tested commit are recorded in
+`grine-coverage.json`. An entry marked `unmapped` is outstanding work, not a
+silent exclusion. The report is updated only after the recorded Grine command
+passes against the pinned commit.
